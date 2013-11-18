@@ -1,0 +1,86 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" type="text/css" href="ra_css.css" />
+<script type="text/javascript">
+   function  onc_leftli(f)
+   {
+	  //var left_mti=document.getElementById("left_mt0" + f);
+	  //var left_ti=document.getElementById("left_ti0" + f);
+	 
+	for(i=1;i<5;i++)
+	{
+	    if(i==f)
+	      {
+		    document.getElementById("left_mt0" + i).style.display="block";
+		    document.getElementById("left_ti0" + i).className="al_li01";
+		  }
+		  else
+		  {
+			document.getElementById("left_mt0" + i).style.display="none";
+		    document.getElementById("left_ti0" + i).className="al_li02";
+		  }
+	   }
+   }
+</script>
+</head>
+
+<body class="admin_left">
+
+<div class="admin_leftdiv">
+   
+   <ul>
+      <li><img src="images/left_menuti.jpg" /></li>
+   </ul>
+    
+   <ul>
+      <li onclick="onc_leftli(1)" id="left_ti01" class="al_li01">Record Manangement</li>
+   </ul>
+    
+       <ul id="left_mt01">
+           <li><a href="new_record.html" class="left_li02" target="mainFrame">New Record</a></li>
+           <li><a href="#" class="left_li01">My Record</a></li>
+           <li><a href="#" class="left_li02">Modify Record</a></li>
+           <li><a href="query_record.html" class="left_li02" target="mainFrame">Query Record</a></li>
+           <li><a href="#" class="left_li03">Verify Record Verify Record Verify</a></li>
+           <li><a href="#" class="left_li04">Verify Record Verify Record Verify</a></li>
+       </ul>
+         
+    <ul>
+      <li onclick="onc_leftli(2)" id="left_ti02" class="al_li02">Alarm</li>
+    </ul>
+           
+        <ul id="left_mt02" style="display:none;">
+           <li><a href="#" class="left_li02">Test01</a></li>
+        </ul>
+      
+     <ul>   
+       <li onclick="onc_leftli(3)" id="left_ti03" class="al_li02">Dashboard</li>
+     </ul>
+     
+        <ul id="left_mt03" style="display:none;">
+           <li><a href="#" class="left_li02">Test02</a></li>
+        </ul>
+        
+     <ul> 
+      <li onclick="onc_leftli(4)" id="left_ti04" class="al_li02">System Management</li>
+     </ul>
+     
+        <ul id="left_mt04" style="display:none;">
+           <li><a href="#" class="left_li02">Test03</a></li>
+        </ul>
+      
+   </ul>
+</div>
+<div class="clear"></div>
+<div class="left_bot">
+    <ul>
+      <li><a href="#" class="left_xia">My Workshop</a></li>
+      <li><a href="#" class="left_xia">EPOP</a></li>
+    </ul>
+</div>
+
+</body>
+</html>
